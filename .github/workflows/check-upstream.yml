@@ -1,0 +1,31 @@
+name: Check upstream
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # every day
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Check upstream
+        uses: ./.github/action-check-upstream
+      - name: Create commits
+        run: |
+          git config user.name 'github-actions'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "[gh-actions] update upstream"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: '[gh-actions] update upstream'
+          body: |
+            The upstream has changes to be merge.
+            Please review and release new version.
+          reviewers: lakuapik
+          assignees: lakuapik
+          labels: automated pr

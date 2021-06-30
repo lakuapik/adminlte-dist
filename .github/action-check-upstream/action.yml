@@ -1,0 +1,6 @@
+name: Action to check upstream
+description: check upstream release and act accordingly
+
+runs:
+  using: docker
+  image: Dockerfile
