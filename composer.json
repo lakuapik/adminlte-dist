@@ -1,0 +1,13 @@
+{
+    "name": "lakuapik/adminlte-dist",
+    "description": "AdminLTE distribution only.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Adi Nugroho",
+            "email": "davidadi216@gmail.com"
+        }
+    ],
+    "require": {}
+}
