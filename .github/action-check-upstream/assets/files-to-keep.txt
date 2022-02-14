@@ -4,6 +4,7 @@ dist/css/adminlte.min.css
 dist/css/alt/adminlte.components.min.css
 dist/css/alt/adminlte.core.min.css
 dist/css/alt/adminlte.extra-components.min.css
+dist/css/alt/adminlte.light.min.css
 dist/css/alt/adminlte.pages.min.css
 dist/css/alt/adminlte.plugins.min.css
 dist/img/AdminLTELogo.png
