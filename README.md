@@ -5,7 +5,7 @@ AdminLTE distribution only. All unnecessary files are removed to save lots of di
 
 | Version | This Bundle | Full Bundle |
 |---------|-------------|-------------|
-| v3.1.0  | 15MB        | 109MB       |
+| v3.2.0  | 15MB        | 123MB       |
 
 If you like the full AdminLTE please use [ColorlibHQ/AdminLTE](https://github.com/ColorlibHQ/AdminLTE).
 
